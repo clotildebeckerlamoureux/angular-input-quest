@@ -1,0 +1,10 @@
+<h1>Hello, welcome to {{dev.firstName}}'s profile</h1>
+
+<p>My full name: {{dev.firstName}} {{dev.lastName}}</p>
+<p>My age: {{dev.age}}</p>
+<p>My gender: {{dev.gender}}</p>
+<p>My bio: {{dev.bio}}</p>
+<p>My skills: 
+    @for (item of skills; track item.id) {
+    <app-skill [devSkills]="item"></app-skill>}
+</p>
